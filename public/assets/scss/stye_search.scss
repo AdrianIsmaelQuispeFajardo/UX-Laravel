@@ -1,0 +1,91 @@
+.body {
+    background-color: $blue;
+    color: #ffffff;
+}
+
+.search-bar {
+    box-sizing: border-box;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #1e3984;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.search-bar .buscar {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-field {
+    margin-left: 20px;
+    margin-right: 40px;
+    color: white;
+    background-color: #1e3984;
+    border: none;
+}
+
+.results-head {
+    margin-top: 20px;
+    align-items: center;
+}
+
+#resultado {
+    font-weight: bold;
+}
+
+.bg-color {
+    background-color: rgb(70, 181, 255);
+    height: 40px;
+}
+
+.bg-white {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.row {
+    column-gap: 30px;
+}
+
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+
+
+$colors: (
+  "blue":       $blue
+);
+
+$blue-100: tint-color($blue, 80%) !default;
+$blue-200: tint-color($blue, 60%) !default;
+$blue-300: tint-color($blue, 40%) !default;
+$blue-400: tint-color($blue, 20%) !default;
+$blue-500: $blue !default;
+$blue-600: shade-color($blue, 20%) !default;
+$blue-700: shade-color($blue, 40%) !default;
+$blue-800: shade-color($blue, 60%) !default;
+$blue-900: shade-color($blue, 80%) !default;
+
+
+$blues: (
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900
+); 
